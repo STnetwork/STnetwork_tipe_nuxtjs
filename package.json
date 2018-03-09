@@ -1,13 +1,19 @@
 {
-  "name": "nuxt-tipe-starter",
+  "name": "STnetwork",
   "version": "1.0.0",
-  "description": "Get started with Tipe + Nuxt + Vue",
-  "author": "Scott Moss <scott@tipe.io>",
+  "description": "STnetwork Systems & Networks",
+  "author": "S.T <admin@stnetwork.fr>",
   "private": true,
+  "config": {
+    "nuxt": {
+      "host": "23.95.70.159",
+      "port": "3000"
+    }
+  },
   "scripts": {
-    "dev": "nuxt",
+    "dev": "HOST=23.95.70.159 PORT=3000 nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "HOST=23.95.70.159 PORT=3000 nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
@@ -24,13 +30,20 @@
     "graphql-tag": "^2.7.3",
     "highlight.js": "^9.12.0",
     "marked": "^0.3.12",
+    "mdi": "^2.1.99",
     "node-fetch": "^2.0.0",
     "normalize.css": "^8.0.0",
     "nuxt": "^1.0.0",
     "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
+    "@nuxtjs/pwa": "^2.0.6",
+    "@nuxtjs/webpackmonitor": "^0.1.0",
+    "anchor-js": "^4.1.0",
     "babel-eslint": "^8.2.1",
+    "buefy": "^0.6.3",
+    "bulma": "^0.6.2",
+    "bulmaswatch": "^0.6.2",
     "dotenv": "^5.0.0",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
@@ -39,8 +52,11 @@
     "less": "^3.0.0",
     "less-loader": "^4.0.5",
     "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6",
+    "nuxt-buefy": "^0.0.3",
+    "qonfucius-nuxt-fontawesome": "^0.0.1",
+    "sass-loader": "^6.0.7",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
+    "stylus-loader": "^3.0.1",
+    "surge": "^0.20.1"
   }
 }

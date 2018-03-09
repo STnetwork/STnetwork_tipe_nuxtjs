@@ -7,22 +7,27 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  router: {
+    linkActiveClass: 'is-active'
+  },
+  mode: 'spa',
+  plugins: ['~plugins/buefy'],
   env: {
     TIPE_API_KEY: process.env.TIPE_API_KEY,
     TIPE_ID: process.env.TIPE_ID
   },
   head: {
-    title: 'nuxt-tipe-starter',
+    title: 'STnetwork',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Get started with Tipe + Nuxt + Vue' }
+      { hid: 'description', name: 'description', content: 'STnetwork Systems & Networks' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  modules: ['@nuxtjs/apollo', '@nuxtjs/bulma', '@nuxtjs/font-awesome'],
+  modules: ['@nuxtjs/apollo', 'nuxt-buefy', '@nuxtjs/font-awesome', '@nuxtjs/pwa', '@nuxtjs/webpackmonitor'],
   apollo: {
     clientConfigs: {
       default: '~/apollo/default.js'
@@ -33,7 +38,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#830CD6' },
   /*
   ** Build configuration
   */

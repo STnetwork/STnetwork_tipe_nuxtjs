@@ -6,7 +6,7 @@
       </h1>
     </div>
     <div class="columns is-centered is-multiline bloglist">
-      <div class="column is-6" v-for="article in articles" :key="article._meta.id">
+      <div class="column is-3" v-for="article in articles" :key="article._meta.id">
         <nuxt-link :to="'/blog' + article.urlSlug">
           <div class="card">
             <div class="card-image">
