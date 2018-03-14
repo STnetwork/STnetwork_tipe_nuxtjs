@@ -34,7 +34,8 @@
     "node-fetch": "^2.0.0",
     "normalize.css": "^8.0.0",
     "nuxt": "^1.0.0",
-    "vue-markdown": "^2.2.4"
+    "vue-markdown": "^2.2.4",
+    "vue-template-compiler": "2.5.15"
   },
   "devDependencies": {
     "@nuxtjs/pwa": "^2.0.6",
@@ -52,11 +53,12 @@
     "less": "^3.0.0",
     "less-loader": "^4.0.5",
     "node-sass": "^4.7.2",
-    "nuxt-buefy": "^0.0.3",
     "qonfucius-nuxt-fontawesome": "^0.0.1",
     "sass-loader": "^6.0.7",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "surge": "^0.20.1"
+    "surge": "^0.20.1",
+    "vue-multiple-back-top": "^1.0.2",
+    "vue-server-renderer": "^2.5.15"
   }
 }
