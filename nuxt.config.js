@@ -27,7 +27,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  modules: ['@nuxtjs/apollo', 'nuxt-buefy', '@nuxtjs/font-awesome', '@nuxtjs/pwa', '@nuxtjs/webpackmonitor'],
+  modules: ['@nuxtjs/apollo', '@nuxtjs/font-awesome', '@nuxtjs/pwa', '@nuxtjs/webpackmonitor'],
   apollo: {
     clientConfigs: {
       default: '~/apollo/default.js'
